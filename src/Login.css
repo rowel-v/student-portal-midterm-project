@@ -1,0 +1,26 @@
+/* Animated background using Tailwind-like sky blue shades */
+/* Blue Sunset Theme */
+.bg-animated {
+  background: linear-gradient(-45deg,
+    #93c5fd, /* blue-300 */
+    #60a5fa, /* blue-400 */
+    #3b82f6, /* blue-500 */
+    #9333ea  /* purple-600 */
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
