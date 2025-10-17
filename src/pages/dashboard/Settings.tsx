@@ -4,19 +4,14 @@ import {
   Moon,
   Sun,
   Bell,
-  BellOff,
   Shield,
   User,
   Palette,
-  Globe,
   BookOpen,
-  CreditCard,
   GraduationCap,
   Download,
   Trash2,
   Save,
-  Eye,
-  EyeOff,
 } from "lucide-react";
 
 function Settings() {

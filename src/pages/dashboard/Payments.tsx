@@ -1,10 +1,8 @@
 import {
   CreditCard,
   Receipt,
-  Download,
   Clock,
   CheckCircle,
-  AlertCircle,
   BookOpen,
   GraduationCap,
   ChevronDown,
@@ -169,11 +167,6 @@ const Payments: React.FC = () => {
         return <CreditCard className="w-5 h-5" />;
     }
   };
-
-  const totalPaid = paymentHistory.reduce(
-    (sum, payment) => sum + payment.amount,
-    0
-  );
 
   const selectedPlan = currentTuition.paymentPlans.find(
     (plan) => plan.id === selectedPaymentPlan
