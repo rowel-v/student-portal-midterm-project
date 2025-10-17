@@ -122,19 +122,6 @@ const Grades: React.FC = () => {
     return "bg-red-600/20 border-red-600/30";
   };
 
-  const getLetterGrade = (grade: number) => {
-    if (grade <= 1.0) return "1.00 - Excellent";
-    if (grade <= 1.25) return "1.25 - Very Good";
-    if (grade <= 1.5) return "1.50 - Good";
-    if (grade <= 1.75) return "1.75 - Satisfactory";
-    if (grade <= 2.0) return "2.00 - Fair";
-    if (grade <= 2.25) return "2.25 - Passable";
-    if (grade <= 2.5) return "2.50 - Poor";
-    if (grade <= 2.75) return "2.75 - Very Poor";
-    if (grade <= 3.0) return "3.00 - Conditional Failure";
-    return "5.00 - Failure";
-  };
-
   const getSimpleLetterGrade = (grade: number) => {
     if (grade <= 1.0) return "1.00";
     if (grade <= 1.25) return "1.25";

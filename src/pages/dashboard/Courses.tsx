@@ -1,4 +1,4 @@
-import { BookOpen, Calendar, User, Clock, MapPin, Users } from "lucide-react";
+import { BookOpen, User, Clock, MapPin, Users } from "lucide-react";
 
 const Courses: React.FC = () => {
   const sampleCourses = [

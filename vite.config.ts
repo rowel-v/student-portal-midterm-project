@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-   base: "/student-portal/",
+  base: '/student-portal-midterm-project/', // <-- this should match your GitHub repo name
 })
