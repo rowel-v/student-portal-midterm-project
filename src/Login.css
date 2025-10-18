@@ -1,5 +1,4 @@
-/* Animated background using Tailwind-like sky blue shades */
-/* Blue Sunset Theme */
+/* === Animated Background (Blue Sunset Theme) === */
 .bg-animated {
   background: linear-gradient(-45deg,
     #93c5fd, /* blue-300 */
@@ -11,8 +10,6 @@
   animation: gradientMove 10s ease infinite;
 }
 
-
-
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -23,4 +20,32 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* === Hide Default Input Validation Errors === */
+input:invalid {
+  box-shadow: none;
+  outline: none;
+}
+
+input:focus:invalid {
+  border-color: inherit;
+  box-shadow: none;
+}
+
+/* Hide the browser's default validation tooltip */
+input:invalid::-webkit-validation-bubble-message,
+input:invalid::-webkit-validation-bubble {
+  display: none;
+}
+
+/* === Optional: Smooth fade for success message === */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10%, 90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.animate-fadeInOut {
+  animation: fadeInOut 2s ease forwards;
 }
